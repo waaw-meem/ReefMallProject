@@ -1,0 +1,120 @@
+@import "../../../styles/abstract/variable";
+
+.bannerSlide {
+    position: relative;
+    height: 37.5em;
+
+    .lightGredBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 37.25em;
+        opacity: 0.5;
+        background: linear-gradient(180deg, #FFF -12.04%, rgba(255, 255, 255, 0.00) 57.4%);
+        z-index: 1;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        background: linear-gradient(16deg, #000 8.02%, rgba(0, 0, 0, 0.00) 55.62%);
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 1926px;
+        background: radial-gradient(50% 50% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+        mix-blend-mode: overlay;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.desktopImg {
+    height: 37.5em;
+    display: block;
+    position: relative;
+
+    @media #{$ipadpro} {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.mobImg {
+    display: none;
+
+    @media #{$ipadpro} {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.sliderTextWrapper {
+    position: absolute;
+    bottom: 2.5em;
+    z-index: 1;
+    @media #{$mob}{
+        left: 2em;
+        right: 2em;
+    }
+
+    h1 {
+        color: var(--color-whitecol);
+    }
+}
+
+.fixedWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9375em;
+    position: absolute;
+    right: 3.755em;
+    bottom: 2.5em;
+    z-index: 2;
+
+    @media #{$mob} {
+        right: 0.855em;
+    }
+}
+
+.iconWrapper {
+    background-color: var(--color-primarycol);
+    padding: 1.125em;
+    border-radius: 3.125em;
+}
+
+.whatsappIcon {
+    @media #{$mob} {
+        width: 2.8em;
+    }
+}
+
+.icon {
+    @media #{$mob} {
+        width: 1.3em;
+    }
+}

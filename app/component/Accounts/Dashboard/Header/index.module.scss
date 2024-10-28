@@ -1,0 +1,73 @@
+@import "../../../../styles/abstract/variable";
+
+.header {
+    // background: rgba(var(--color-accent2), 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.625em 1.875em;
+
+    .titleWrapper {
+        .title {
+            @media #{$ipadpro} {
+                margin-left: 2em;
+            }
+        }
+    }
+
+    .gradientButton {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.775em 1.25em 0.775em 0.8125em;
+        font-size: 0.875em;
+        border: 1px solid var(--color-primarycol);
+        transition: $transition;
+
+        &:hover {
+            border: 1px solid var(--color-primarycol);
+            &:before {
+                background-image: var(--color-secondarycol);
+            }
+            svg{
+                path{
+                    stroke: var(--color-primarycol);
+                }
+            }
+
+            .btn {
+                color: var(--color-primarycol);
+            }
+        }
+
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: 0;
+            left: 0;
+            background-image: var(--color-gradientPrimarycol);
+            opacity: 1;
+            transition: all 0.2s linear;
+            z-index: 0;
+        }
+
+        svg {
+            z-index: 1;
+            margin-right: 0.3125em;
+
+            path {
+                stroke: var(--color-whitecol);
+            }
+        }
+
+        .btn {
+            color: var(--color-whitecol);
+            position: relative;
+            font-weight: 700;
+        }
+    }
+}

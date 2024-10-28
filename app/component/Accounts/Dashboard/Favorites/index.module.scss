@@ -1,0 +1,26 @@
+@import "../../../../styles/abstract/variable";
+
+.FavoriteWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625em;
+
+    .brandCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20.9398em;
+        height: 12.4375em;
+        border: 1px solid rgba(#000, 0.19);
+        position: relative;
+        @media #{$mob}{
+            width: 100%;
+        }
+        
+        .deleteWrapper{
+            position: absolute;
+            top: 0.9375em;
+            right: 0.9375em;
+        }
+    }
+}

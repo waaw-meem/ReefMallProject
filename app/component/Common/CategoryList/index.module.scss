@@ -1,0 +1,50 @@
+@import "../../../styles/abstract/variable";
+
+.categoryList {
+    padding: 6.875em 0 6.3125em;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: #FFF1E1;
+        z-index: -1;
+        top: 0;
+        
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        background: linear-gradient(236deg, rgba(255, 255, 255, 0.00) 44.6%, #FFF 89.95%);
+    }
+}
+
+.listWrapper {
+    margin-top: 5em;
+}
+
+.bgStores {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.headingSection {
+    max-width: 60%;
+
+    @media #{$ipad} {
+        max-width: 60%;
+    }
+
+    @media #{$mob} {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+@import "./styles/main.scss";
+
+:root {
+  --color-primarycol: #c183b9;
+  --color-secondarycol: #87cbbb;
+  // --color-gradientPrimarycol: linear-gradient(
+  //   103deg,
+  //   #f3654a -4.13%,
+  //   #c1496d 17.15%,
+  //   #b94366 39.94%,
+  //   #96477a 65.27%,
+  //   #93418f 93.13%
+  // );
+  // --color-gradientSecondarycol: linear-gradient(
+  //   317deg,
+  //   #f67d5a 33.03%,
+  //   #ffc092 115.95%
+  // );
+  --color-gradientPrimarycol: linear-gradient(115deg, #C183B9 0%, #99458F 120.53%);
+  --color-gradientSecondarycol: linear-gradient(180deg, #87CBBB 0%, #FFF 100%);
+  --color-accent: #f67d5a;
+  --color-accent2: 232, 197, 162;
+  --color-accent3: #e8c5a2;
+  --color-accent4: 232, 197, 162;
+  --color-accent5: #fa7d5a;
+  --color-whitecol: #ffffff;
+  --color-blackcol: #0a0a0a;
+  --color-graycol: #57544c;
+  --color-graycol2: #d8d8d8;
+  --color-graycol3: #231f20;
+  --color-graycol4: #a7a7a7;
+  --color-dangercol: #dc3545;
+  --color-successcol: #198754;
+  --color-mustardcol: #f7d455;
+  --color-darkgray: #b9b9b9;
+  --color-lightbrown: #faf3ec;
+  --color-bordercol: 152, 152, 152;
+  --color-bordercol2: 68, 68, 68;
+  --color-blackcoltext: #111010;
+  --color-lightblack: "#262626";
+  --color-darkgray1: #444241;
+  --color-blackcoltext: #111010;
+  --color-graytext: rgba(113, 115, 114, 1);
+  --color-placeholder: rgb(0 0 0 / 40%);
+  --color-border: #cfcfcf;
+  --color-inputborder: 87, 84, 76;
+  --border-checbox: 68, 68, 68;
+  --color-inputcol: #818181;
+  --color-inputbordercol: #d4d0ca;
+  --color-whitecolrgb: 255, 255, 255;
+
+  --fontSize-120: 7.5em; // 120px
+  --fontSize-54: 3.375em; // 54px
+  --fontSize-42: 2.625em; // 42px
+  --fontSize-40: 2.5em; // 40px
+  --fontSize-28: 1.75em; // 28px
+  --fontSize-24: 1.5em; // 24px
+  --fontSize-22: 1.375em; // 22px
+  --fontSize-20: 1.25em; // 20px
+  --fontSize-18: 1.125em; // 18px
+  --fontSize-16: 1em; // 16px
+}

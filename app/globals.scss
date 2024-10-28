@@ -1,0 +1,57 @@
+@import './styles/main.scss';
+
+:root {
+    --color-primarycol: #c183b9;
+    --color-secondarycol: #87cbbb;
+    --color-primaryrgb:193, 131, 185;
+    --color-secondaryrgb: 135, 203, 187;
+    --color-gradientPrimarycol: linear-gradient(115deg, #C183B9 0%, #99458F 120.53%);
+    --color-gradientSecondarycol: linear-gradient(180deg, #87CBBB 0%, #FFF 100%);
+    --color-gredientoffwhite: linear-gradient(180deg, rgba(255, 241, 225, 1) 0%, #FFF 100%);
+    --color-whitecol: #fff;
+    --color-blackcol: #000000;
+    --color-graycol: #727272;
+    --color-graycol2: 76, 76, 78;
+    --color-secondarycolhalf: rgba(135, 203, 187, 0.5);
+    --color-primarycolhalf: rgba(193, 131, 185, 0.5);
+    --color-purple: rgb(160 100 165);
+    --color-redcol: rgba(248, 72, 94, 1);
+    --color-golden: #d9bd47;
+    --color-gray2col: #4c4c4e;
+    --color-gray3col: #262626;
+    --color-whitergb: 255, 255, 255;
+    --color-offwhite: #FFF1E1;
+    --border-primarycolor: #DCDCDC;
+    --color-blackrgb: 0, 0, 0;
+    --color-inputBorder: 153, 153, 153;
+
+
+    --fontSize-120: 7.5em; // 120px
+    --fontSize-54: 3.375em; // 54px
+    --fontSize-42: 2.625em; // 42px
+    --fontSize-40: 2.5em; // 40px
+    --fontSize-28: 1.75em; // 28px
+    --fontSize-24: 1.5em; // 24px
+    --fontSize-22: 1.375em; // 22px
+    --fontSize-20: 1.25em; // 20px
+    --fontSize-18: 1.125em; // 18px
+    --fontSize-16: 1em; // 16px
+}
+
+// .fixedWrapper {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     grid-gap: 1.9375em;
+//     position: fixed;
+//     right: 2.5em;
+//     bottom: 2.5em;
+//     z-index: 99;
+// }
+
+// .iconWrapper {
+//     background-color: var(--color-primarycol);
+//     padding: 1.125em;
+//     border-radius: 3.125em;
+// }

@@ -1,0 +1,74 @@
+@import "../../../styles/abstract/variable";
+
+.gallerSection {
+    background: var(--color-gradientPrimarycol);
+
+}
+
+.gallerySlide {
+    width: auto;
+
+    @media #{$mob} {
+        padding: 0 2em;
+        width: 100%;
+    }
+}
+
+.iconWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(10deg);
+}
+
+.imgWrapper {
+    img {
+        height: 35.625em;
+        width: 30.625em;
+        object-fit: cover;
+
+        @media #{$mob} {
+            width: 100%;
+        }
+    }
+}
+
+.navigationWrapper {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 2.8125em auto 0;
+    justify-content: space-between;
+    overflow: hidden;
+
+    @media #{$mob} {
+        flex-direction: column;
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @media #{$mob} {
+        margin-bottom: 1.5em;
+        order: 1;
+    }
+}
+
+.scrollBar {
+    position: static !important;
+    width: 90% !important;
+    height: 0.0625em !important;
+    background: rgba(var(--color-whitergb), 0.5) !important;
+
+    @media #{$ipad} {
+        width: 80% !important;
+    }
+
+    @media #{$mob} {
+        order: 2;
+        width: 100% !important;
+    }
+}

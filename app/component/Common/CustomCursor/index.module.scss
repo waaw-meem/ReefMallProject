@@ -1,0 +1,28 @@
+.cursor {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: var(--color-blackcol);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+    transition: transform 0s ease , visibility 0.5s ease;
+}
+
+
+.cursorText {
+    color: var(--color-whitecol);
+}
+
+.white{
+    background: var(--color-whitecol);
+    color: var(--color-blackcol);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}

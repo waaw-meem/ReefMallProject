@@ -1,0 +1,37 @@
+.informationPolicyContent {
+    font-size: 1.25em;
+    padding-left: 1.375em;
+
+    ul {
+        list-style: disc;
+        padding-left: 1em;
+        margin-bottom: 1em;
+        color: var(--color-gray2col);
+
+        li {
+            line-height: 1.5em;
+
+            &:first-child {
+                margin-bottom: 2em;
+            }
+        }
+    }
+    ol{
+        padding-left: 1em;
+        list-style: decimal;
+        color: var(--color-gray2col);
+
+        li {
+            line-height: 2em;
+        }
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin-bottom: 0.5em;
+        color: var(--color-gray3col);
+    }
+}
+.para{
+    h3{
+        font-weight: 500;
+    }
+}

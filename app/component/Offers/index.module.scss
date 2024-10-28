@@ -1,0 +1,15 @@
+.offerSection{
+    position: relative;
+    background-color: var(--color-offwhite);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,169 @@
+@import "../../../styles/abstract/variable";
+
+.slideWrapper {
+    border-radius: 1.875em;
+    position: relative;
+    overflow: hidden;
+
+    &.smallCard {
+        .title {
+            font-size: 1.875em;
+        }
+    }
+
+    &::before {
+        content: "";
+        transform: scale(0) translate(-50%, -50%);
+        transition: all 0.5s;
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        opacity: 0.8;
+        background: var(--light-Green, #87CBBB);
+        top: 50%;
+        left: 50%;
+
+        @media #{$ipadpro} {
+            display: none;
+        }
+    }
+
+    &:hover {
+        @media #{$desktop} {
+            &::before {
+                transform: scale(1) translate(-50%, -50%);
+            }
+
+            .buttonWrapper {
+                height: auto !important;
+                width: auto !important;
+                padding: 0.75em 1.05875em 0.875em !important;
+
+                .buttonText {
+                    max-width: max-content !important;
+                    width: auto;
+                    transition: all .3s cubic-bezier(1, 0, 1, 0) !important;
+                    max-height: max-content !important;
+                    margin-right: 1.0625em;
+                }
+            }
+        }
+
+    }
+
+    &:hover {
+        .mainImage {
+            @media #{$desktop} {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.slide {
+    overflow: hidden;
+    position: relative;
+    height: 33.125em;
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        content: "";
+        border-radius: 1.875em;
+        background: linear-gradient(0, rgba(0, 0, 0, 0.77) 0%, rgba(217, 217, 217, 0.00) 100%);
+    }
+
+    @media #{$ipadpro} {
+        height: 23.125em;
+    }
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    object-position: center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+
+.textWrapper {
+    z-index: 1;
+    position: absolute;
+    bottom: 3.0625em;
+    color: var(--color-whitecol);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2.5em;
+    text-transform: capitalize;
+
+    @media #{$ipad} {
+        padding: 0 1em;
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 1.5em;
+    }
+
+    @media #{$mob} {
+        bottom: 1.25em;
+    }
+
+    .title {
+        @media #{$desktop}{
+            width: 75%;
+        }
+        @media #{$ipad}{
+            margin-bottom: 1em;
+            width: 100%;
+            font-size: 1.6em !important;
+        }
+        @media #{$mob} {
+            font-size: 1.375em;
+        }
+    }
+
+    .buttonWrapper {
+        border-radius: 6.25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-primarycol);
+        padding: 1.10875em 1.05875em;
+
+        @media #{$ipadpro} {
+            padding: 0.5em 1.0625em 0.5em !important;
+        }
+
+        .linkWrapepr {
+            display: flex;
+            align-items: center;
+
+            .buttonText {
+                z-index: 1;
+                max-width: 0;
+                max-height: 0;
+                transition: all .3s cubic-bezier(0, 1, 0, 1) !important;
+                overflow: hidden;
+                color: var(--color-whitecol);
+                font-size: 1.125em;
+
+                @media #{$ipadpro} {
+                    max-width: max-content;
+                    max-height: max-content;
+                    margin-right: 0.625em;
+                }
+            }
+        }
+    }
+}

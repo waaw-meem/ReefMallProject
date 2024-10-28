@@ -1,0 +1,18 @@
+.ratingReview{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .empty,
+    .full{
+        span{
+            margin-right: 0.625em;
+        }
+    }
+    .reviewTitle{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: .55em 0 0 !important;
+    }
+}

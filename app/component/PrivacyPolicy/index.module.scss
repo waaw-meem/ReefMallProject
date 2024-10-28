@@ -1,0 +1,59 @@
+@import "../../styles/abstract/variable";
+
+.policiesSection {
+    background-color: var(--color-offwhite);
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 1));
+    }
+
+}
+
+.introPara {
+    position: relative;
+    z-index: 2;
+
+    p {
+        font-size: 1.25em;
+        line-height: 1.505em;
+
+        @media #{$mob} {
+            font-size: 0.9375em;
+        }
+    }
+}
+
+.policyPoint {
+    position: relative;
+    z-index: 2;
+}
+
+.richText{
+    ol{
+        padding-left: 2.25em !important;
+        li{
+            &::marker{
+                font-size: 1.5em;
+            }
+        }
+    }
+}

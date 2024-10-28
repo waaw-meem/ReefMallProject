@@ -1,0 +1,69 @@
+@import "../../../../styles/abstract/variable";
+
+.datePicker {
+    width: 100%;
+}
+
+.inputWrapperDate {
+    position: relative;
+
+    input {
+        width: 100%;
+        height: 3.75em;
+        border-width: 0.0625em;
+        border-style: solid;
+        border-color: rgba(var(--color-whitergb), 0.5);
+        padding: 0 1.25em;
+        border-radius: 0.3125em;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-blackcol);
+        font-family: inherit;
+        background: transparent;
+
+        &::placeholder {
+            font-size: 1em;
+            font-weight: 500 !important;
+            color: var(--color-placeholder);
+            font-family: inherit;
+
+            @media #{$mob} {
+                font-size: 0.9em;
+            }
+        }
+
+        @media #{$mob} {
+            font-size: 0.9em;
+        }
+    }
+
+    .label {
+        margin-bottom: 0.1875em;
+        color: var(--color-whitecol);
+        font-size: 1.375em;
+        font-weight: 700;
+
+        @media #{$mob} {
+            font-size: 1.1em;
+        }
+    }
+
+    .fillupForm {
+        color: var(--color-whitecol);
+        font-size: 1.125em;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .dateIcon {
+        cursor: pointer;
+        position: absolute;
+        right: 1.25em;
+        top: 2.35em;
+
+        @media #{$mob} {
+            top: 2.1em !important;
+        }
+
+    }
+}

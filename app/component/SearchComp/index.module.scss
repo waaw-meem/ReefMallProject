@@ -1,0 +1,100 @@
+@import "../../styles/abstract/variable";
+
+.searchSection {
+  background: rgba(var(--color-accent4), 0.2);
+}
+
+.searchItem {
+  border-bottom: 0.0625em solid #e9e9e9;
+  padding: 0.9375em 0;
+
+  &:first-child {
+    border-top: 0.0625em solid #e9e9e9;
+  }
+}
+
+.title {
+  // color: #1155CC;
+  color: #f8485e;
+  text-decoration: underline;
+}
+
+.link {
+  color: green;
+  text-decoration: underline;
+}
+
+.desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-width: 40%;
+
+  @media #{$ipad} {
+    max-width: 60%;
+  }
+
+  @media #{$mob} {
+    max-width: 100%;
+  }
+}
+
+.certified {
+  text-align: center;
+  margin: 1.5em 0 0;
+}
+
+
+
+.searchInputContainer {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+
+  @media #{$ipadpro} {
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    padding: 0 1em;
+    height: 3em;
+    border: 0;
+  }
+
+  .searchButton {
+    height: 40px;
+    padding: 0 0.75em;
+    font-size: 1em;
+    position: relative;
+    transition: $transition;
+    color: var(--color-whitecol);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-primarycol);
+    }
+
+    &:hover {
+      color: var(--color-blackcol);
+      border: 1px solid var(--color-primarycol);
+
+      &:before {
+        opacity: 1;
+        background: var(--color-whitecol);
+      }
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+}

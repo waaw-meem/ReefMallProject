@@ -1,0 +1,50 @@
+@import "../../../styles/abstract/variable";
+
+.breadcrumb {
+    background-color: var(--color-primarycol);
+    background: linear-gradient(115deg, #C183B9 0%, #99458F 120.53%);
+    padding-block: 1em;
+
+    @media #{$mob} {
+        display: none;
+    }
+}
+
+.breadcrumb__listing {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+
+    img {
+        margin-bottom: 0.1875em;
+        width: 0.3125em;
+    }
+
+    .breadcrumb__item {
+        display: flex;
+        align-items: center;
+        gap: 1.25em;
+        color: var(--color-whitecol);
+        font-weight: 500;
+        letter-spacing: 1.25px;
+
+        &:last-child {
+            img {
+                display: none;
+            }
+        }
+        a{
+            color: var(--color-whitecol);
+            font-weight: 500;
+        }
+
+
+        &.active__breadcrumb {
+
+            a {
+                color: var(--color-whitecol);
+                font-weight: 700;
+            }
+        }
+    }
+}

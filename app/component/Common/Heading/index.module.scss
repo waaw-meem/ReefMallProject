@@ -1,0 +1,91 @@
+@import "../../../styles/abstract/variable";
+
+.heading {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &.white {
+        color: var(--color-whitecol);
+
+        :before {
+            background: var(--color-whitecol);
+        }
+
+        :after {
+            background: var(--color-whitecol);
+        }
+    }
+
+    h6 {
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.875em;
+        letter-spacing: 0.225em;
+        letter-spacing: 0.175em;
+
+        &.subTitle {
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                display: none;
+            }
+
+        }
+
+        @media #{$ipad} {
+            justify-content: flex-start;
+        }
+
+        @media #{$mob} {
+            font-size: 0.875em;
+            justify-content: center;
+        }
+
+        &:before {
+            display: block;
+            content: "";
+            width: 2.5em;
+            height: 0.125em;
+            background: var(--color-blackcol);
+            margin-right: 0.625em;
+        }
+
+        &:after {
+            display: block;
+            content: "";
+            width: 2.5em;
+            height: 0.125em;
+            background: var(--color-blackcol);
+            margin-left: 0.625em;
+        }
+    }
+
+    h2 {
+        margin-bottom: 0.875em;
+        line-height: 1.1;
+
+        @media #{$ipad} {
+            text-align: left;
+        }
+
+        @media #{$mob} {
+            font-size: 2.5em;
+            text-align: center;
+        }
+    }
+}
+
+.centered {
+    h6 {
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

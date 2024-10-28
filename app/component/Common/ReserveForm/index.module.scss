@@ -1,0 +1,60 @@
+@import "../../../styles/abstract/variable";
+
+.reserveFormWrapper {
+    padding: 3.4375em 4.3125em;
+    overflow-y: auto;
+
+    @media #{$ipadpro} {
+        // height: 65em;
+        height: auto;
+        overflow-y: hidden;
+    }
+    
+
+    @media #{$mob} {
+        padding: 2em;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    &.purple {
+        background: var(--color-gradientPrimarycol);
+    }
+}
+
+.title {
+    font-size: 2.7em;
+    color: var(--color-whitecol);
+    margin-bottom: 0.65em;
+}
+
+.headingWrapper {
+
+    font-size: 1.255em;
+
+    @media #{$mob} {
+        font-size: 0.8em;
+    }
+
+}
+
+.spinWrapper{
+    width: 5em;
+}
+
+.thanksWrapper{
+    display: flex;
+    column-gap: 1em;
+    margin-top: 1.25em;
+    border: 1px solid var(--color-whitecol);
+    border-radius: 0.25em;
+    padding: 0.1875em 0.5em;
+    .titleSuccess{
+        margin: 0;
+        color: var(--color-whitecol);
+    }
+    img{
+        width: 1.25em;
+    }
+
+}

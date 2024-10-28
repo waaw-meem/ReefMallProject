@@ -1,0 +1,147 @@
+input {
+    font-family: inherit;
+}
+
+.form-group {
+
+    &.border-red {
+        input {
+            border: 1px solid red !important;
+        }
+
+        &.upload-input {
+            .red-label-upload {
+                border: 1px solid red !important;
+            }
+        }
+
+    }
+
+    &.border-red {
+        textarea {
+            border: 1px solid red !important;
+        }
+    }
+
+    .error {
+        color: red;
+        margin-top: 8px;
+        display: block;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.25em;
+    @media #{$ipad}{
+        margin-bottom: 1em;
+    }
+    .input {
+        width: 100%;
+        height: 4.25em;
+        padding: 0 0.9em;
+        font-size: 0.875em;
+        background: transparent;
+        border: 1px solid rgba(var(--color-inputBorder), 1) !important;
+        margin-top: 0.375em;
+
+        @media #{$ipad}{
+            font-size: 1em;
+            height: 3.25em;
+        }
+
+        &::placeholder {
+            color: rgba(var(--color-blackrgb), 0.4);
+        }
+    }
+
+    .textArea {
+        font-family: inherit;
+        height: 7.4375em;
+        padding-top: 0.9em;
+    }
+}
+
+// phone input
+.react-tel-input {
+    .phone-flag {
+        height: 3.7em !important;
+        border: 1px solid var(--color-inputbordercol) !important;
+        border-radius: 0 !important;
+        padding-left: 3.5em !important;
+
+    }
+}
+
+.reserve-form-purple {
+    &.reserve-form-purple {
+        .form-group {
+            width: 49%;
+
+            @media #{$ipad} {
+                width: 100%;
+            }
+
+            span {
+                color: var(--color-whitecol);
+                font-size: 1.375em;
+                font-weight: 700;
+
+                &.error {
+                    font-weight: normal;
+                    font-size: 1em;
+                }
+
+                @media #{$mob} {
+                    font-size: 1.1em;
+                }
+            }
+
+            input {
+                height: 3.304em;
+            }
+
+            input,
+            textArea {
+                border-radius: 0.625em;
+                border-color: rgba(var(--color-whitergb), 0.5) !important;
+                color: var(--color-whitecol);
+                font-size: 1.125em;
+
+                &::placeholder {
+                    color: var(--color-whitecol);
+                    font-size: 1em;
+                    opacity: 0.4;
+                    font-weight: 500 !important;
+                }
+
+                @media #{$mob} {
+                    font-size: 1em;
+                }
+            }
+
+            &.form-group-lg {
+                width: 100%;
+            }
+        }
+    }
+
+    .form-custom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.user-profile-form{
+    .form-group{
+
+        input{
+            border: 0 !important;
+            }
+    }
+}
+.form-group-passwrod{
+    .error{
+        padding-left: 1em;
+    }
+}

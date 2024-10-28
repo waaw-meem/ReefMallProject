@@ -1,0 +1,185 @@
+@import "../../../styles/abstract/variable";
+
+.amenitiesSection {
+    padding: 7.5em 0;
+    background-image: linear-gradient(180deg, #87CBBB 0%, #FFF 100%);
+    position: relative;
+
+    @media #{$ipad} {
+        padding: 5em 0 8.25em;
+    }
+
+    @media #{$mob} {
+        padding: 4em 0;
+    }
+
+    .bgVector {
+        position: absolute;
+        left: 7.5em;
+        top: 9.375em;
+
+        @media #{$mob} {
+            width: 23.011em;
+            height: 26em;
+        }
+    }
+
+    .paddindRight {
+        padding-right: 0;
+
+        @media #{$ipadpro} {
+            padding-right: 0em;
+        }
+
+        @media #{$ipad} {
+            padding-right: 0em;
+        }
+
+        @media #{$mob} {
+            padding-right: 2em;
+        }
+    }
+
+    .headingWrapper {
+        padding-right: 1.25em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        h2 {
+            margin-bottom: 0.5em;
+        }
+
+        @media #{$ipad} {
+            width: 50%;
+        }
+
+        @media #{$mob} {
+            width: 100%;
+        }
+
+    }
+}
+
+.slides {
+    position: relative;
+
+    .slideWrapper {
+        overflow: hidden;
+        position: relative;
+        height: 46.1875em;
+        border-radius: 1.875em;
+
+        @media #{$ipadpro} {
+            height: 42.1875em;
+        }
+
+        @media #{$ipad} {
+            height: 40.6875em;
+        }
+
+        @media #{$mob} {
+            height: 32em;
+        }
+
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 53.25%, rgba(0, 0, 0, 0.80) 95.58%);
+            top: 0;
+            content: "";
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .textWrapper {
+            position: absolute;
+            bottom: 3em;
+            padding: 0 2.6875em;
+
+            h4 {
+                color: var(--color-whitecol);
+                margin: 0.625em 0 0.5em;
+
+                @media #{$ipad} {
+                    font-size: 1.9375em;
+                }
+            }
+
+            p {
+                color: var(--color-whitecol);
+                font-size: 1em;
+                line-height: 1.5em;
+                font-weight: normal;
+                letter-spacing: 0.0625em;
+                overflow: hidden;
+                transition: all .3s cubic-bezier(0, 1, 0, 1);
+                max-height: 0;
+                padding-bottom: 0;
+
+                @media #{$ipad} {
+                    max-height: max-content;
+                }
+
+
+            }
+        }
+
+        .svgStyle {
+            width: 4em;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        p {
+            transition: all .3s cubic-bezier(1, 0, 1, 0) !important;
+            height: auto;
+            max-height: 999px !important;
+        }
+    }
+
+}
+
+.buttonWrapper {
+    display: none;
+
+    @media #{$ipad} {
+        display: none;
+    }
+
+    @media #{$mob} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.875em 0;
+    }
+
+}
+
+.linkWrapper {
+    position: static;
+    margin-bottom: 4.5em;
+
+    @media #{$ipad} {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -5.35em;
+        left: 0.875em;
+        right: 0;
+        margin: auto;
+    }
+
+    @media #{$mob} {
+        left: 0;
+    }
+}

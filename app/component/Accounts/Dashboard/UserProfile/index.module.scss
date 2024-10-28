@@ -1,0 +1,142 @@
+@import "../../../../styles/abstract/variable";
+
+.userProfile {
+  position: relative;
+}
+
+.bannerWrapper {
+  border-radius: 0.625em;
+  @media #{$mob} {
+    img {
+      height: 6.25em;
+      object-fit: cover;
+      border-radius: 0.3125em;
+    }
+  }
+}
+.userInfoWrapper {
+  width: 100%;
+  padding: 0 3.125em;
+  margin-top: -4.45em;
+  @media #{$ipad} {
+    padding: 0 1em;
+  }
+  @media #{$mob}{
+    padding: 0;
+  }
+}
+.userDetailWrapper {
+  @media #{$mob} {
+    margin: 0.9375em 0;
+  }
+  .profileImageWrapper {
+    display: flex;
+    align-items: flex-end;
+    @media #{$mob} {
+      width: 100%;
+    }
+    .imageWrapper {
+      img {
+        border-radius: 0.8125em;
+      }
+
+      .buttonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          margin-top: 0.625em;
+          font-size: 0.875em;
+          font-weight: 400;
+        }
+
+        label {
+          margin-top: 0.625em;
+          font-size: 0.875em;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .inputWrapper {
+      display: flex;
+      align-items: center;
+      margin: 0 0 3.125em 0.9375em;
+     
+
+      .input {
+        border: 0;
+        font-size: 1.375em;
+        font-weight: 700;
+        @media #{$mob} {
+          width: 100%;
+        }
+        &.active {
+          border: 1px solid var(--color-graycol2);
+          padding: 0 10px;
+          margin-right: 10px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  
+    .inputFormWrapper {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.9375em;
+      margin-top: 2.4375em;
+      @media #{$mob} {
+        position: relative;
+      }
+      .label {
+        width: 15%;
+        font-size: 1.25em;
+        font-weight: 700;
+        color: var(--color-inputcol);
+        @media #{$mob} {
+          position: absolute;
+          top: -1.25em;
+        }
+      }
+      .input {
+        width: 80%;
+        border: 0;
+        font-size: 1em;
+        font-weight: 700;
+        color: var(--color-inputcol);
+        margin-right: 0.625em;
+        &.active {
+          color: var(--color-blackcol);
+          border-bottom: 1px solid var(--color-inputcol);
+        }
+        &.passwordInput {
+          width: 74%;
+        }
+      }
+      .edit {
+        width: 5%;
+        border: 1px solid var(--color-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-inputcol);
+        font-size: 0.75em;
+        padding: 0.4375em 1.0625em 0.3125em;
+        margin-left: 0.3125em;
+        &.changePassword {
+          width: 11%;
+          @media #{$mob} {
+            width: 30%;
+          }
+        }
+        @media #{$mob} {
+          width: 20%;
+        }
+      }
+    }
+}

@@ -1,0 +1,85 @@
+@import "../../../styles/abstract/variable";
+
+.main_wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.875em;
+    height: 18.75em;
+
+    &:hover {
+        .linkstyle {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.imageContainer {
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    &:before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(16deg, #000 8.02%, rgba(0, 0, 0, 0) 55.62%);
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.gridContent {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 1.75em;
+    width: 100%;
+    padding: 0 1.25em;
+    z-index: 2;
+    @media #{$ipad}{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subHeadingWrapper {
+        max-width: 65%;
+
+        @media #{$ipadpro} {
+            max-width: 60%;
+        }
+        @media #{$ipad} {
+            max-width: 100%;
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .subHeading {
+        color: var(--color-whitecol);
+        font-weight: 500;
+        line-height: 1.2em;
+    }
+
+    .linkstyle {
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+
+        @media #{$ipadpro} {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    }
+}

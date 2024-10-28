@@ -1,0 +1,305 @@
+@import "../../styles/abstract/variable";
+
+.signIn {
+    height: 100vh;
+
+    .leftContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: var(--color-gradientPrimarycol);
+        position: relative;
+        flex-direction: column;
+
+        @media #{$ipadpro} {
+            position: absolute;
+            top: 0;
+            height: 100px;
+            padding: 3em;
+            width: 100%;
+
+            .leftPattern,
+            .rightPattern,
+            .title,
+            .copyright {
+                display: none;
+            }
+        }
+
+        @media #{$mob} {
+            position: static;
+            width: 100%;
+
+            a {
+                display: flex;
+                justify-content: center;
+
+                svg {
+                    width: 200px;
+                }
+            }
+        }
+
+        .leftPattern {
+            width: 5.75em;
+            height: 100%;
+            position: absolute;
+            left: 0;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .rightPattern {
+            width: 5.75em;
+            height: 100%;
+            position: absolute;
+            right: 0;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .titleWrapper {
+            max-width: 34.0625em;
+            text-align: center;
+
+            @media #{$ipadpro} {
+                width: 26em;
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                svg{
+                    @media #{$ipadpro}{
+                        width: 9em;
+                    }
+                }
+            }
+
+            .title {
+                max-width: 30.75em;
+                font-size: 2.25em;
+                color: var(--color-whitecol);
+                margin-top: 0.9925em;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+            color: var(--color-whitecol);
+            text-align: center;
+        }
+    }
+
+    .rightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+        @media #{$ipadpro} {
+            height: 80vh;
+        }
+
+        &.signupRight {
+            height: 100vh;
+        }
+
+        .titleWrapper {
+            margin-bottom: 3em;
+
+            .title {
+                text-align: center;
+                margin-bottom: 0.25em;
+                
+            }
+
+            .subTitle {
+                text-align: center;
+                color: var(--color-inputcol);
+                margin: 0;
+            }
+        }
+
+        .formWrapper {
+            width: 28.14em;
+            max-width: 28.14em;
+
+            @media #{$mob} {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 1.5em;
+            }
+            input{
+                font-size: 1.1em;
+                height: 3.5em;
+                font-family: sans-serif;
+            }
+
+            .signupWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0.75em;
+
+                .accountText {
+                    margin: 0 0.6875em 0;
+                }
+
+                .accountLink {
+                    color: var(--color-primarycol);
+                    text-decoration: underline;
+                    font-size: 1.125em;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover{
+                        color: var(--color-secondarycol);
+                    }
+                }
+
+                .accountLinkForgot {
+                    display: flex;
+                    align-items: center;
+                    color: var(--color-inputcol);
+                    font-size: 1.125em;
+                    transition: $transition;
+                    &:hover{
+                        color: var(--color-blackcol);
+                    }
+
+                    svg {
+                        height: 1.25em;
+                        margin-right: 0.3125em;
+                    }
+                }
+            }
+        }
+
+        .otpWrapper {
+            .otpContainer {
+                display: flex;
+                align-items: center;
+            }
+
+            .optInput {
+                margin-right: .5em;
+                width: 1.55em !important;
+                height: 1.5em;
+                font-size: 2.625em;
+                border: 1px solid var(--color-inputbordercol);
+                font-family: monospace;
+                font-weight: 700;
+                padding-top: 0;
+                // padding-top: 0.3em;
+
+                &:focus {
+                    border: 1px solid var(--color-blackcol);
+                }
+
+                &.active {
+                    border: 1px solid var(--color-secondarycol);
+                    color: var(--color-secondarycol);
+                }
+            }
+            .activeOtpInput{
+                input{
+                    border: 1px solid var(--color-blackcol);
+                }
+            }
+
+            .signupWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2.5em 0 0.625em;
+
+                .accountText {
+                    margin: 0 0.6875em 0;
+                }
+
+                .accountLink {
+                    color: var(--color-primarycol);
+                    text-decoration: underline;
+                    font-size: 1.125em;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover{
+                        color: var(--color-secondarycol);
+                    }
+                }
+
+            }
+
+            .accountLinkForgot {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-inputcol);
+                font-size: 1.125em;
+                transition: $transition;
+
+                &:hover{
+                    color: var(--color-blackcol);
+                }
+
+                svg {
+                    height: 1.25em;
+                    margin-right: 0.3125em;
+                }
+            }
+        }
+    }
+}
+
+.buttonContainer {
+    margin-top: 1.25em;
+
+    .gradientButton {
+        padding: 1em 0 0.875em;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: 0;
+            left: 0;
+            background-image: var(--color-gradientPrimarycol);
+            opacity: 1;
+            transition: $transition;
+            z-index: 0;
+        }
+
+        &:hover {
+            &:before {
+                background-image: none;
+                border: 1px solid var(--color-primarycol);
+            }
+
+            .btn {
+                color: var(--color-primarycol);
+            }
+        }
+
+        .btn {
+            color: var(--color-whitecol);
+            position: relative;
+            font-weight: 700;
+        }
+    }
+}

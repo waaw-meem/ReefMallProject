@@ -1,0 +1,40 @@
+@import "../../styles/abstract/variable";
+
+.newSection {
+    position: relative;
+    background-color: var(--color-offwhite);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    @media #{$ipad} {
+        max-width: 100%;
+    }
+
+    .headingContainer {
+        max-width: 40%;
+
+        @media #{$ipad} {
+            max-width: 60%;
+        }
+
+        @media #{$mob} {
+            max-width: 80%;
+        }
+    }
+}

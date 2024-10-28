@@ -1,0 +1,106 @@
+@import "../../../styles/abstract/variable";
+
+.latestSection {
+    padding: 6.25em 0 6.875em;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: #C183B9;
+        z-index: -1;
+        top: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        background: linear-gradient(180deg, rgba(193, 131, 185, 0.00) 0%, #C183B9 100%);
+        background: #C183B9;
+    }
+
+    .bgLatest {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        right: 0;
+        width: 75%;
+        height: 80%;
+        object-fit: cover;
+        object-position: top;
+        opacity: 0.25;
+    }
+
+    .linkWrapper {
+        top: 10.55em;
+        z-index: 1;
+
+        @media #{$ipadpro} {
+            top: 0;
+        }
+
+        @media #{$ipad} {
+            top: 0;
+        }
+    }
+
+    .slides {
+        position: relative;
+        width: 26.25em;
+        cursor: none;
+
+        @media #{$mob} {
+            width: 100%;
+        }
+
+        // &:hover {
+
+        //     .draggingIndicator {
+        //         display: block;
+        //     }
+        // }
+    }
+}
+
+.slideWrapper {
+    position: relative;
+    &.cursorCustom{
+        cursor: url('/assets/svg/drag.svg') 50 50, auto;
+    }
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    justify-content: center;
+    transition: opacity 0.2s ease, transform 0.1s ease-out;
+}
+
+.cursorText {
+    color: #fff;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}

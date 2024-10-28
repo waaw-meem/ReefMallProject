@@ -1,0 +1,274 @@
+@import "../../styles/abstract/variable";
+
+.cuisineSection {
+    position: relative;
+    background-color: var(--color-offwhite);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+
+}
+
+.filterCuisines {
+    position: relative;
+    background: var(--color-whitecol);
+    z-index: 1;
+    border-radius: 1.875em 1.875em 0 0;
+    border: 0.0625em solid #DCDCDC;
+    transition: $transition;
+
+    .filterHeader {
+        position: relative;
+    }
+
+    .filterSet {
+        display: none
+    }
+
+    .svgStyle {
+        display: none;
+    }
+
+    @media #{$ipadpro} {
+        margin-bottom: 2em;
+        position: fixed;
+        right: -100%;
+        width: 33.5em;
+        height: 100%;
+        z-index: 99;
+        border-radius: 0;
+        transition: $transition;
+        overflow-y: auto;
+
+        &.active {
+            transition: $transition;
+            right: 0;
+            top: 0;
+        }
+
+        .filterSet {
+            display: block;
+
+            padding: 1em 1.5em;
+            background: #aa5fa1;
+            width: 18.75em;
+            border-radius: 1.875em;
+            color: #fff;
+            margin: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.125em;
+
+        }
+
+        .svgStyle {
+            position: absolute;
+            top: 2.0625em;
+            right: 2.5em;
+            display: block;
+            z-index: 9;
+        }
+    }
+
+
+    @media #{$mob} {
+        width: 100%;
+    }
+
+    .filterHeader {
+        padding: 1.4375em 1.75em 1.875em 1.875em;
+        background: var(--GRADIAN, linear-gradient(115deg, #C183B9 0%, #99458F 120.53%));
+        border-radius: 1.875em 1.875em 0 0;
+
+        .searchHead {
+            color: var(--color-whitecol);
+            font-size: 2.625em;
+            line-height: 1.145em;
+            margin-bottom: 0.3999em;
+        }
+
+
+        @media #{$ipad} {
+            border-radius: 0;
+        }
+    }
+
+    .searchWrapper {
+        box-shadow: 0em 0.125em 0.2875em 0em #00000030;
+    }
+
+    .filterItem {
+
+        .inputContainer {
+            position: relative;
+
+            .inputSearch {
+                width: 100%;
+                border-color: rgba(var(--color-bordercol), 0.2);
+                font-size: 1em;
+                padding: 0.8em 1.25em;
+                font-family: inherit;
+                border-radius: 6em;
+                border: 0.0625em solid rgba(152, 152, 152, 0.20);
+
+                &::placeholder {
+                    color: #989898;
+
+                }
+            }
+
+
+            .submitButton {
+                width: 2.75em;
+                position: absolute;
+                top: 0;
+                right: 0.125em;
+                height: 2.75em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: all 0.25s ease-in-out;
+                bottom: 0;
+                margin: auto;
+
+                @media #{$desktop} {
+
+                    &:hover {
+                        background: var(--color-primarycol);
+
+                        svg {
+                            path {
+                                fill: var(--color-whitecol);
+                            }
+                        }
+                    }
+                }
+
+                svg {
+                    path {
+                        fill: #989898;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .checboxitem {
+        padding: 1.25em 1.875em;
+        transition: $transition;
+        border-bottom: 0.0625em solid var(--border-primarycolor);
+
+        &:has(input[type="checkbox"]:checked) {
+            background: var(--color-purple);
+
+            .checkboxName {
+                color: var(--color-whitecol);
+            }
+
+            svg {
+                path {
+                    fill: var(--color-whitecol);
+                }
+            }
+        }
+
+        &:hover {
+            @media #{$desktop} {
+                background: var(--color-purple);
+
+                .checkboxName {
+                    color: var(--color-whitecol);
+                }
+
+                svg {
+                    path {
+                        fill: var(--color-whitecol);
+                    }
+                }
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            .checkboxWrapper {
+                align-items: center;
+                display: flex;
+
+                img {
+                    margin-right: 0.625em;
+                    border-radius: 100%;
+                }
+
+                input {
+                    display: none;
+
+                }
+
+                .checkboxName {
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    text-transform: capitalize;
+
+                }
+            }
+
+            svg {
+                width: 0.375em;
+                height: 0.625em;
+            }
+        }
+    }
+
+}
+
+.searchButton {
+    display: none;
+    width: 15em;
+    padding: 1.125em 1.75em;
+    background: #ac63a3;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 3.75em;
+    color: #fff;
+    border-radius: 1.25em;
+    font-size: 1.125em;
+
+    .filterSvg {
+        margin-right: 1.25em;
+    }
+
+    @media #{$ipadpro} {
+        display: flex;
+        align-items: center;
+    }
+
+    @media #{$mob} {
+        margin-bottom: 2em;
+    }
+}
+
+.rowCustom {
+    gap: 1.5em 0;
+    z-index: 1;
+    position: relative;
+
+    @media #{$ipad} {
+        gap: 1.9em 0;
+        // width: 100%;
+    }
+}

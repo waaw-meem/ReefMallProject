@@ -1,0 +1,78 @@
+@import "../../../styles/abstract/variable";
+
+.headingWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.videoWrapper {
+    width: 54.375em;
+    height: 27.5625em;
+    border-radius: 4em;
+    overflow: hidden;
+    background: var(--color-blackcol);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(28 28 28 / 50%);
+        z-index: 0;
+    }
+
+    @media #{$mob} {
+        width: 100%;
+        height: 20em;
+        border-radius: 1em;
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .playWraper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .title {
+        margin: 0;
+        color: var(--color-whitecol);
+        margin-right: 1.25em;
+        text-transform: uppercase;
+    }
+
+    .playIcon {
+        position: relative;
+        cursor: pointer;
+        width: 5.6875em;
+        height: 5.6875em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .line {
+        width: 7.375em;
+        height: 2px;
+        background: var(--color-whitecol);
+        margin-right: -1.25em;
+    }
+}

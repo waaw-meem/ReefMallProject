@@ -1,0 +1,773 @@
+{
+  "header": [
+    {
+      "title": "Directory",
+      "link": "/shop/directory",
+      "main": false,
+      "target": "_parent"
+    },
+    {
+      "title": "Gift Card",
+      "link": "/gift-card",
+      "main": false,
+      "target": "_parent"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact-us",
+      "main": false,
+      "target": "_parent"
+    },
+    {
+      "title": "Shop",
+      "link": "/shop",
+      "main": true,
+      "target": "_parent"
+    },
+    {
+      "title": "Eat",
+      "link": "/eat",
+      "main": true,
+      "target": "_parent"
+    },
+    {
+      "title": "Services",
+      "link": "/services",
+      "main": true,
+      "target": "_parent"
+    },
+    {
+      "title": "Latest Happenings",
+      "link": "/latest-happenings",
+      "main": true,
+      "target": "_parent"
+    }
+  ],
+  "homeBanner": [
+    {
+      "src": "/assets/images/home/homebanner.jpg",
+      "mobSrc": "/assets/images/home/homebanner-mob.jpg",
+      "title": "Discover Unmatched Shopping Experiences at Reef Mall",
+      "subTitle": "Welcome to",
+      "link": "#",
+      "target": "_parent"
+    },
+    {
+      "src": "/assets/images/home/service.jpg",
+      "mobSrc": "/assets/images/home/service.jpg",
+      "title": "Discover Unmatched Shopping Experiences at Reef Mall",
+      "subTitle": "Welcome to",
+      "link": "#",
+      "target": "_parent"
+    },
+    {
+      "src": "/assets/images/home/homebanner.jpg",
+      "mobSrc": "/assets/images/home/homebanner-mob.jpg",
+      "title": "Discover Unmatched Shopping Experiences at Reef Mall",
+      "subTitle": "Welcome to",
+      "link": "#",
+      "target": "_parent"
+    }
+  ],
+  "amenities": [
+    {
+      "src": "/assets/images/home/wifi.jpg",
+      "icon": "/assets/svg/wifi.svg",
+      "title": "Free wi-fi",
+      "desc": "Discover unparalleled convenience and elegance as you Discover unparalleled"
+    },
+    {
+      "src": "/assets/images/home/atm.jpg",
+      "icon": "/assets/svg/atm.svg",
+      "title": "ATM",
+      "desc": "Discover unparalleled convenience and elegance as you Discover unparalleled"
+    },
+    {
+      "src": "/assets/images/home/wifi.jpg",
+      "icon": "/assets/svg/wheel-chair.svg",
+      "title": "Wheel Chair",
+      "desc": "Discover unparalleled convenience and elegance as you Discover unparalleled"
+    },
+    {
+      "src": "/assets/images/home/atm.jpg",
+      "icon": "/assets/svg/atm.svg",
+      "title": "ATM",
+      "desc": "Discover unparalleled convenience and elegance as you Discover unparalleled"
+    }
+  ],
+  "brands": [
+    {
+      "logo": "/assets/images/home/brand-logo-1.png",
+      "img": "/assets/images/home/bg-img-1.jpg",
+      "category": "chinese",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-2.png",
+      "img": "/assets/images/home/bg-img-2.jpg",
+      "category": "japanese",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-1.png",
+      "img": "/assets/images/home/bg-img-1.jpg",
+      "category": "indian",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-2.png",
+      "img": "/assets/images/home/bg-img-2.jpg",
+      "category": "italian",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-1.png",
+      "img": "/assets/images/home/bg-img-1.jpg",
+      "category": "japanese",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-2.png",
+      "img": "/assets/images/home/bg-img-2.jpg",
+      "category": "japanese",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/home/brand-logo-1.png",
+      "img": "/assets/images/home/bg-img-1.jpg",
+      "category": "japanese",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    }
+  ],
+  "latestOffers": {
+    "leftSlider": [
+      {
+        "src": "/assets/images/home/left-1.jpg"
+      },
+      {
+        "src": "/assets/images/home/left-2.jpg"
+      },
+      {
+        "src": "/assets/images/home/left-1.jpg"
+      }
+    ],
+    "bottomSlider": [
+      {
+        "src": "/assets/images/home/right-2.jpg"
+      },
+      {
+        "src": "/assets/images/home/right-1.jpg"
+      },
+      {
+        "src": "/assets/images/home/right-2.jpg"
+      }
+    ],
+    "topSlider": [
+      {
+        "title": "Get Super Flat 51% off on Entire Stock",
+        "subTitle": "January, 25 to 31st, 2024",
+        "src": "/assets/images/home/nike.jpg",
+        "link": "#",
+        "target": "_parent"
+      },
+      {
+        "title": "Get Super Flat 51% off on Entire Stock",
+        "subTitle": "Fabruary, 12 to 30th, 2024",
+        "src": "/assets/images/home/zoize.jpg",
+        "link": "#",
+        "target": "_parent"
+      },
+      {
+        "title": "Get Super Flat 51% off on Entire Stock",
+        "subTitle": "March, 25 to 31st, 2024",
+        "src": "/assets/images/home/nike.jpg",
+        "link": "#",
+        "target": "_parent"
+      }
+    ]
+  },
+  "services": [
+    {
+      "src": "/assets/images/home/service-2.jpg",
+      "title": "Al Marjan Tourism",
+      "link": "#",
+      "target": "_parent"
+    },
+    {
+      "src": "/assets/images/home/service-1.jpg",
+      "title": "Emirates Driving Institude",
+      "link": "#",
+      "target": "_parent"
+    },
+    {
+      "src": "/assets/images/home/service-3.jpg",
+      "title": "Prime medical center",
+      "link": "#",
+      "target": "_parent"
+    }
+  ],
+  "store": [
+    {
+      "logo": "/assets/images/brand/brand-1.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "arma",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-2.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "zoize",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-3.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "beverly",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-4.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "almaya",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-5.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "bench",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-6.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "h&m",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-7.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "levis",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-1.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "arma",
+      "link": "/shop/shop-category/apparel/arma",
+      "target": "_parent"
+    }
+  ],
+  "category": [
+    {
+      "src": "/assets/images/shop/apparel.jpg",
+      "title": "Apparel",
+      "link": "apparel"
+    },
+    {
+      "src": "/assets/images/shop/footer.jpg",
+      "title": "footwear",
+      "link": "footwear"
+    },
+    {
+      "src": "/assets/images/shop/apparel.jpg",
+      "title": "apparel",
+      "link": "apparel"
+    }
+  ],
+  "storeEat": [
+    {
+      "logo": "/assets/images/brand/brand-1.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "arma",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-2.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "zoize",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-3.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "beverly",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-4.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "almaya",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-5.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "bench",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-6.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "h&m",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-7.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "levis",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    },
+    {
+      "logo": "/assets/images/brand/brand-1.png",
+      "src": "/assets/images/brand/brand-bg.png",
+      "title": "dunkin",
+      "link": "/eat/eat-category/apparel/dunkin",
+      "target": "_parent"
+    }
+  ],
+  "brandDetail": {
+    "img": "/assets/images/brand/brand-detail/shop-main.jpg",
+    "logo": "/assets/images/brand/brand-2.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "latestHappening": {
+    "desc": {
+      "title": "Book Your Event Reserve Your Spot",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "ctaText": "Reserve Now",
+      "img": "/assets/images/latest-happening/img-main.jpg"
+    }
+  },
+  "latestHappeningDetail": {
+    "title": "Smurftastic Day at Reef Mall",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "img": "/assets/images/event/main-img-2.jpg"
+  },
+  "events": {
+    "title": "Exciting Event Awaits Join Us",
+    "subTitle": "Events",
+    "events": [
+      {
+        "img": "/assets/images/event/img-2.jpg",
+        "title": "Back To School Festival",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "date": "Aug 18, 2023",
+        "ctaText": "READ MORE",
+        "ctaLink": "/sadas"
+      },
+      {
+        "img": "/assets/images/event/img-1.jpg",
+        "title": "Smurftastic Day at Reef Mall",
+        "date": "June 7, 2023",
+        "ctaText": "READ MORE",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "ctaLink": "#"
+      },
+      {
+        "img": "/assets/images/event/img-3.jpg",
+        "title": "Chess Tournament",
+        "date": "Feb 9, 2023",
+        "ctaText": "READ MORE",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "ctaLink": "#"
+      },
+      {
+        "img": "/assets/images/event/img-1.jpg",
+        "title": "Back To School Festival",
+        "date": "Aug 18, 2023",
+        "ctaText": "READ MORE",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "ctaLink": "#"
+      },
+      {
+        "img": "/assets/images/event/img-2.jpg",
+        "title": "Back To School Festival",
+        "date": "Aug 18, 2023",
+        "ctaText": "READ MORE",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "ctaLink": "#"
+      },
+      {
+        "img": "/assets/images/event/img-3.jpg",
+        "title": "Back To School Festival",
+        "date": "Aug 18, 2023",
+        "ctaText": "READ MORE",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "ctaLink": "#"
+      }
+    ]
+  },
+  "footer": {
+    "footerLinks": [
+      {
+        "title": "usefull links",
+        "links": [
+          {
+            "title": "latest happening",
+            "link": "/latest-happenings",
+            "target": "_parent"
+          },
+          {
+            "title": "services",
+            "link": "/services",
+            "target": "_parent"
+          },
+          {
+            "title": "what's happening",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "gift card",
+            "link": "/gift-card",
+            "target": "_parent"
+          },
+          {
+            "title": "FAQs",
+            "link": "/faq",
+            "target": "_parent"
+          },
+          {
+            "title": "contact us",
+            "link": "/contact-us",
+            "target": "_parent"
+          }
+        ]
+      },
+      {
+        "title": "visitor information",
+        "links": [
+          {
+            "title": "free Wi-Fi",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "ATM",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "wheel chair",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "metro",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "prayer room",
+            "link": "#",
+            "target": "_parent"
+          },
+          {
+            "title": "gift card",
+            "link": "/gift-card",
+            "target": "_parent"
+          }
+        ]
+      }
+    ],
+    "visitHours": {
+      "title": "opening hours",
+      "times": [
+        {
+          "title": "Sunday to Thursday : 10am - 10pm"
+        },
+        {
+          "title": "Friday and Saturday: 10am - 11am"
+        }
+      ]
+    },
+    "socials": [
+      {
+        "src": "/assets/svg/social/facebook.svg",
+        "link": "#",
+        "target": "_black"
+      },
+      {
+        "src": "/assets/svg/social/instagram.svg",
+        "link": "#",
+        "target": "_black"
+      },
+      {
+        "src": "/assets/svg/social/twitter.svg",
+        "link": "#",
+        "target": "_black"
+      },
+      {
+        "src": "/assets/svg/social/youtube.svg",
+        "link": "#",
+        "target": "_black"
+      }
+    ]
+  },
+  "serviceList": [
+    {
+      "cardImage": "/assets/images/service/service-one.png",
+      "title": "Emirates Driving Institude",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-two.png",
+      "title": "Mood Vape",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-three.png",
+      "title": "Al Marjan Tourism",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-four.png",
+      "title": "Tawjeeh",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-five.png",
+      "title": "Prime Medical Center",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-six.png",
+      "title": "Amer",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-seven.png",
+      "title": "Daiso Japan",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-eight.png",
+      "title": "Etisalats Kiosk",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-nine.png",
+      "title": "Pinass Traval",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-ten.png",
+      "title": "Premier Diagnostics",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-ele.png",
+      "title": "Philipinners little play house",
+      "link": "#"
+    },
+    {
+      "cardImage": "/assets/images/service/service-twe.png",
+      "title": "Sta lucia commercial brokers",
+      "link": "#"
+    }
+  ],
+  "giftCards": [
+    {
+      "id": 1,
+      "price": "200 AED",
+      "category": "generic",
+      "giftimage": "/assets/images/giftcard/editedcardfour.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 2,
+      "price": "250 AED",
+      "category": "birthday",
+      "giftimage": "/assets/images/giftcard/editedcardblack.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 3,
+      "price": "300 AED",
+      "category": "festival",
+      "giftimage": "/assets/images/giftcard/editedcardthree.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 4,
+      "price": "350 AED",
+      "category": "generic",
+      "giftimage": "/assets/images/giftcard/editedcardfour.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 5,
+      "price": "400 AED",
+      "category": "birthday",
+      "giftimage": "/assets/images/giftcard/editedcardfive.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 6,
+      "price": "450 AED",
+      "category": "festival",
+      "giftimage": "/assets/images/giftcard/editedcardsix.png",
+      "note": "Gift cards are not refundable.",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "title": "Reef Mall gift cards are the perfect gift for any occasion.",
+      "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+  "privacyPolicy": [
+    {
+      "list": "Personal information is information related to a visitor, or a combination of pieces of information that could reasonably allow him to be identified. Personal information may consist of full name, personal contact numbers, residential address, email address, gender or date of birth. While information such as date of birth in isolation may not be enough to uniquely identify the visitor, a combination of full name and date of birth may be sufficient to do so."
+    },
+    {
+      "list": "Sensitive personal data or information ('SPDI') shall include the following"
+    },
+    {
+      "list": "Financial information such as bank account or credit card or debit card or other payment instrument details."
+    },
+    {
+      "list": "Physical, physiological and mental health condition"
+    },
+    {
+      "list": "Medical records and history"
+    },
+    {
+      "list": "Provided however that"
+    },
+    {
+      "list": "Any information that is freely available or accessible in public domain or furnished under any law for the time being in force or otherwise furnished voluntarily by a visitor shall not be regarded as sensitive personal information"
+    },
+    {
+      "list": "Subject to your consent, all Personal Data (including but not limited to phone numbers and email addresses) provided to Reef may be used and retained by Reef and Reef may disclose and transfer (whether in UAE or abroad) the same to Reef's agents, contractors, any telecommunications operators, any third party service providers, any third party collection agencies, any credit reference agencies, any security agencies, any credit providers, banks, financial institutions, professional advisers, any other persons under a duty of confidentiality to Reef and any of Reef's actual or proposed assignees or transferees of Reef's rights with respect to Reef to use, disclosure, holding, processing, retaining or transferring such Personal Data for the purposes mentioned above."
+    }
+  ],
+  "FAQcontent": [
+    {
+      "faqhead": "Heading One",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Two",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Three",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Four",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Five",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Six",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "faqhead": "Heading Seven",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    }
+  ],
+  "latestOfferCard": [
+    {
+      "cardImage": "/assets/images/offers/offerone.png",
+      "iconImage": "/assets/images/offers/iconone.png",
+      "title": "great deals Starting At 299 AED ",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offertwo.png",
+      "iconImage": "/assets/images/offers/icontwo.png",
+      "title": "Flat 20% discount on any  product",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offerthree.png",
+      "iconImage": "/assets/images/offers/iconthree.png",
+      "title": "Get Flat 15% discount on any product",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offerfour.png",
+      "iconImage": "/assets/images/offers/iconsix.png",
+      "title": "Emirates Driving Institute 30% Discount on Fees",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offerfive.png",
+      "iconImage": "/assets/images/offers/iconfive.png",
+      "title": "Get Flat 50% off Save Big on Travel Adventures",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offersix.png",
+      "iconImage": "/assets/images/offers/iconfour.png",
+      "title": "Get Super offer Get 6 Buy 6 ",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offerseven.png",
+      "iconImage": "/assets/images/offers/iconseven.png",
+      "title": "Great Offer 15% discount on any product",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offereight.png",
+      "iconImage": "/assets/images/offers/iconeight.png",
+      "title": "great deals Starting At 299 AED ",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    },
+    {
+      "cardImage": "/assets/images/offers/offernine.png",
+      "iconImage": "/assets/images/offers/iconnine.png",
+      "title": "Get Flat 20% discount on any product",
+      "link": "#",
+      "linkIcon": "/assets/svg/right-arrow.svg"
+    }
+  ]
+}

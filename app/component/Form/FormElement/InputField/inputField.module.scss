@@ -1,0 +1,247 @@
+@import "../../../../styles/abstract/variable";
+
+.inputContainer {
+    position: relative;
+
+    .labelUpper {
+        font-size: 1em;
+        color: var(--color-inputcol);
+        font-weight: 400;
+        margin: 4.375em 0 1.25em;
+    }
+
+    .label {
+        margin-bottom: 0.1875em;
+        color: #808080;
+        font-weight: 700;
+    }
+
+    svg {
+        position: absolute;
+        right: 1.25em;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .fillupForm {
+        color: var(--color-whitecol);
+        font-size: 1.125em;
+        font-weight: 400;
+    }
+
+    .fillUpForm {
+        input {
+            border: 1px solid #b5b5b5 !important;
+            border-radius: 0 !important;
+            height: 3.125em !important;
+        }
+    }
+
+    .dashboardInputLabel {
+        color: var(--color-graycol);
+        font-size: 1.25em;
+        text-transform: capitalize;
+    }
+}
+
+
+// burjuman
+
+.customInput {
+    border: 1px solid rgba(var(--color-inputborder), 0.5) !important;
+
+    &.dashboardInput {
+        border: 1px solid var(--color-inputbordercol) !important;
+        border-radius: 0 !important;
+    }
+
+    &::placeholder {
+        color: var(--color-placeholder);
+    }
+}
+
+.updateBrands {
+    .customInput {
+        border: 1px solid #B5B5B5 !important;
+        border-radius: 0 !important;
+        height: 3.125em !important;
+    }
+}
+
+.uploadLabel {
+    display: none;
+}
+
+
+.customLogo {
+    input {
+        display: none;
+    }
+
+    .customLogoUpload {
+        display: flex;
+        align-items: center;
+
+        @media #{$mob} {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .labelUpload {
+            width: 100%;
+            display: block;
+            height: 3.125em;
+            border: 1px solid #B5B5B5;
+            padding-left: 0.9375em;
+            display: flex;
+            align-items: center;
+
+            @media #{$mob} {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .buttonContainer {
+            display: flex;
+
+            @media #{$mob} {
+                margin-bottom: 0.5em;
+            }
+
+            .buttonUpload {
+                cursor: pointer;
+                width: 7.875em;
+                font-size: 1em;
+                font-weight: 700;
+                border: 1px solid var(--color-inputcol);
+                height: 3.125em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-inputcol);
+                margin: 0 0.625em;
+            }
+
+            .buttonRemove {
+                background: var(--color-graycol);
+                color: var(--color-whitecol);
+                width: 6.9375em;
+            }
+        }
+    }
+}
+
+// review 
+.reviewName,
+.reviewEmail {
+    input {
+        padding: 1.0625em 0.8375em !important;
+        border: 1px solid var(--color-graycol2) !important;
+        font-size: var(--fontSize-18) !important;
+        width: 100% !important;
+        font-family: inherit !important;
+        color: var(--color-graycol) !important;
+        border-radius: 0 !important;
+    }
+}
+
+
+// brand Gallery Tab
+
+.galleryInputWrapper {
+    .customInput {
+        border: 1px solid #B5B5B5 !important;
+        border-radius: 0 !important;
+        height: 3.125em !important;
+    }
+}
+
+.galleryInputUpload {
+    .labelUpload {
+        width: 9.0625em;
+        height: 3.125em;
+        border: 1px solid #B5B5B5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+        cursor: pointer;
+    }
+
+    &.uploadLabel {
+        display: block;
+    }
+
+    .buttonContainer {
+        display: none;
+    }
+}
+
+.galleryInputbrand {
+    display: none;
+}
+
+// contact tab
+.socialIcon {
+    display: flex;
+    align-items: center;
+
+    .svgWrapper {
+        width: 3.125em;
+        height: 2.75875em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-primarycol);
+        margin-top: 0.375em;
+
+        @media #{$ipad}{
+            height: 3.125em;
+        }
+
+        &.facebook {
+            background: #1178F2;
+        }
+
+        &.youtube {
+            background: #E30000;
+        }
+
+        &.instagram {
+            background: radial-gradient(circle at 40% 112%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+
+        &.tiktok {
+            background: var(--color-blackcol);
+        }
+
+        svg {
+            position: static;
+            width: 1.5625em;
+            height: 1.1875em;
+
+            path {
+                fill: var(--color-whitecol);
+            }
+        }
+    }
+}
+
+// upload brands
+
+.BrandVideo {
+    &.customInput {
+        border: 1px solid #B5B5B5 !important;
+        border-radius: 0 !important;
+        height: 3.125em !important;
+    }
+
+    &.labelUpper {
+        margin: 0 0 0.9375em;
+    }
+}
+
+.brandVideoLabel {
+    margin-top: 1.3125em;
+}

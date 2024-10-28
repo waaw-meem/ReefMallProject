@@ -1,0 +1,79 @@
+@import "../../../styles/abstract/variable";
+
+.slide {
+    pointer-events: none;
+    width: 26.018em;
+    height: 26.018em;
+    background: var(--color-whitecol);
+    border-radius: 3.75em;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #DCDCDC;
+    z-index: 1;
+
+    @media #{$ipadpro} {
+        width: 100%;
+    }
+
+    @media #{$mob} {
+        width: 100%;
+        height: 13em;
+        border-radius: 2em;
+    }
+
+    &::before {
+        content: "";
+        transform: scale(0) translate(-50%, -50%);
+        transition: all 0.5s;
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        opacity: 0.8;
+        background: var(--light-Green, #87CBBB);
+        top: 50%;
+        left: 50%;
+    }
+
+    @media #{$desktop} {
+        &:hover {
+            &::before {
+                transform: scale(1) translate(-50%, -50%);
+            }
+            .bgImage {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+}
+
+.bgImage {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.brandLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    pointer-events: auto;
+    @media #{$mob}{
+        padding: 2em;
+    }
+    img{
+        @media #{$mob}{
+            width: 10em;
+        }
+    }
+}

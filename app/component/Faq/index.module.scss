@@ -1,0 +1,123 @@
+@import "../../styles/abstract/variable";
+
+.faqSection {
+    background-color: var(--color-offwhite);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+}
+
+.accordionWrapper {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    .accordionItem {
+        border: 0.03125em solid #BDBDBD;
+        margin-bottom: 1.25em;
+        padding: 1.4375em 1.25em;
+
+        .accordionTitle {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            cursor: pointer;
+            transition: $transition;
+
+
+
+            &.clicked {
+                margin-bottom: 1.125em;
+            }
+
+            &:hover {
+                .headStyle {
+                    color: var(--color-primarycol);
+                }
+
+                .iconCross {
+
+                    &:before {
+
+                        background: var(--color-primarycol);
+                    }
+
+                    &:after {
+                        background: var(--color-primarycol);
+
+                    }
+                }
+
+            }
+
+            .headStyle {
+                font-size: 1.125em;
+                font-weight: 700;
+                color: #444241;
+
+            }
+
+            .iconCross {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:before {
+                    content: "";
+                    width: 1.25em;
+                    height: 2px;
+                    display: block;
+                    background: var(--color-blackcol);
+                }
+
+                &:after {
+                    content: "";
+                    width: 1.25em;
+                    height: 2px;
+                    display: block;
+                    background: var(--color-blackcol);
+                    transform: rotate(90deg);
+                    position: absolute;
+                    transition: $transition;
+                }
+
+                &.active {
+                    &:after {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .accordionContent {
+        font-size: 0.8em;
+        transition: $transition;
+
+        span {
+            font-weight: 500;
+            line-height: 1.725em;
+        }
+
+        a {
+            text-decoration: underline;
+            transition: $transition;
+
+            &:hover {
+                color: var(--color-primarycol);
+            }
+        }
+    }
+
+}

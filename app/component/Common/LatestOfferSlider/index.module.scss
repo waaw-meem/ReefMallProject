@@ -1,0 +1,209 @@
+@import "../../../styles/abstract/variable";
+
+.featureSlider {
+    position: relative;
+    padding-top: 5.6875em;
+    background-image: url('/assets/images/home/latestoffer-bg.jpg');
+
+    @media #{$ipadpro} {
+        background-position: right;
+        background-size: cover;
+    }
+
+    @media #{$ipad} {
+        padding-top: 13em;
+        background-position: right;
+        background-size: cover;
+    }
+
+}
+
+.offerSlideLeft {
+    .imgWrapper {
+        overflow: hidden;
+        border-top-right-radius: 1.875em;
+        height: 53.125em;
+
+        @media #{$ipadpro} {
+            height: 52em;
+        }
+
+        @media #{$ipad} {
+            border-radius: 1.875em;
+            height: 30.75em;
+        }
+
+        @media #{$mob} {
+            height: 35.15em;
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: right;
+
+        @media #{$ipad} {
+            object-position: bottom left;
+        }
+
+        @media #{$mob} {
+            object-position: center;
+        }
+    }
+}
+
+.headingWrapper {
+    margin-top: 1.875em;
+
+    @media #{$ipad} {
+        position: absolute;
+        top: 2em;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        left: 3em;
+    }
+
+    @media #{$mob} {
+        top: 2.375em;
+        left: 0;
+    }
+}
+.closebtnWrapper{
+    right: 2em !important;
+    @media #{$mob}{
+        right: 1em !important;
+    }
+}
+
+.textWrapper {
+    display: flex;
+    align-items: center;
+    grid-gap: 1.25em;
+    margin-bottom: 1.5625em;
+
+    @media #{$ipad} {
+        width: 95%;
+        margin: 1.6875em auto 1.6875em;
+        align-items: center;
+    }
+
+    .leftWrapper {
+        // width: calc(100% - 28.75em);
+        width: calc(100% - 58.75em);
+
+        @media #{$ipadpro} {
+            width: calc(100% - 26.75em);
+        }
+
+        @media #{$ipad} {
+            width: calc(100% - 83%);
+        }
+    }
+
+    .rightWrapper {
+        // width: calc(100% - 7.9em);
+        width: calc(100% - 30.9em);
+
+        @media #{$ipadpro} {
+            width: calc(100% - 0em);
+        }
+
+        @media #{$ipad} {
+            width: calc(100% - 20%);
+        }
+    }
+
+    h3 {
+        margin-bottom: .325em;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.buttonWrapper {
+    margin: 0 0 2.5em 8.0em;
+
+    @media #{$ipadpro} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 4em 0;
+    }
+}
+
+.offerSlideBottom {
+    height: 14.875em !important;
+    overflow: hidden;
+    border-radius: 1.875em;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5625em;
+
+    @media #{$mob} {
+        justify-content: center;
+    }
+}
+
+.navButtonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.125em;
+
+    @media #{$ipad} {
+        display: none;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.125em;
+
+        img {
+            margin-right: 0.625em;
+        }
+
+        &.right {
+            img {
+                margin-left: 0.625em;
+            }
+        }
+    }
+}
+
+.bottomSlider {
+    @media #{$ipad} {
+        display: none !important;
+    }
+}
+.modal__wrapper{
+    overflow-y: auto;
+}
+.modal{
+    @media #{$ipadpro}{
+        width: 90% !important;
+        overflow-y:auto ;
+    }
+    @media #{$ipad}{
+        // height: 85% !important;
+    }
+}

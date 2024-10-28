@@ -1,0 +1,160 @@
+@import "../../../../../styles/abstract/variable";
+
+.userDetailWrapper {
+  @media #{$mob} {
+    margin: 0.9375em 0;
+  }
+
+  .profileImageWrapper {
+    display: flex;
+    align-items: flex-end;
+    @media #{$mob} {
+      padding: 0 1.25em;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imageWrapper {
+      img {
+        border-radius: 0.8125em;
+        height: 9.5em;
+        width: 9.5em;
+        object-fit: cover;
+
+        @media #{$mob} {
+          height: 7.5em;
+          width: 7.5em;
+        }
+      }
+
+      .buttonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          margin-top: 0.625em;
+          font-size: 0.875em;
+          font-weight: 400;
+          color: var(--color-blackcol);
+        }
+
+        label {
+          margin-top: 0.625em;
+          font-size: 0.875em;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .inputWrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      margin: 0 0 3.125em 0.9375em;
+
+      @media #{$mob} {
+        align-items: center;
+        margin: 1em 0 1.85em 1.25em;
+
+        .input {
+          margin-bottom: 0;
+        }
+      }
+      .formWrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .input {
+        border: 0;
+        font-size: 1em;
+        font-weight: 700;
+
+        @media #{$mob} {
+          font-size: 0.875em;
+        }
+
+        &.active {
+          border: 1px solid var(--color-graycol2);
+          padding: 0 0.625em;
+          margin-right: 0.625em;
+          font-weight: 400;
+        }
+
+        input {
+          // width: 9em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+        }
+      }
+
+      .error {
+        color: red;
+        margin-top: 0.5em;
+        display: block;
+        font-size: 0.725em;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.input {
+  border: 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--color-inputcol);
+  margin-right: 0.625em;
+
+  input {
+    border: 0 !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    font-size: 1.375em;
+    font-weight: 700;
+
+    @media #{$mob} {
+      width: 9.5em;
+    }
+  }
+}
+
+.editinput {
+  color: var(--color-blackcol);
+
+  input {
+    border: 1px solid #b5b5b5 !important;
+    padding: 0 0.5em;
+  }
+}
+
+.editButton {
+  width: 1.5em;
+  height: 1.5em;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+
+  &.visible {
+    visibility: visible;
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.button {
+  width: 3.125em;
+  opacity: 1;
+
+  &.visible {
+    visibility: visible;
+    opacity: 0;
+    width: 0;
+  }
+}

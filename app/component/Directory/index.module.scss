@@ -1,0 +1,148 @@
+@import "../../styles/abstract/variable";
+
+.directorySection {
+    padding: 6.25em 0;
+    background: var(--color-gredientoffwhite);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--color-whitecol) 100%);
+        background-repeat: no-repeat;
+    }
+}
+
+.filterWrapper {
+    margin: 6.875em 0 6.25em;
+    position: relative;
+    z-index: 2;
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 0.6em;
+    }
+
+    .filter {
+        display: flex;
+        align-items: center;
+
+
+        @media #{$ipadpro} {
+            overflow: auto;
+            padding-bottom: 0.625em;
+        }
+    }
+
+    .filterContainer {
+        display: inline-flex;
+        align-items: center;
+        border: 0.0625em solid var(--color-primarycol);
+        border-radius: 2.5em;
+        margin-right: 1.4375em;
+
+        .filterItem {
+            // padding: 0.875em 1.0625em 1em 0.875em;
+            text-transform: uppercase;
+            border-radius: 100%;
+            width: 2.075em;
+            height: 2.075em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.375em;
+            color: var(--color-primarycol);
+            transition: all 0.5s ease-out;
+            font-weight: bold;
+            margin: 0 0.1875em;
+
+            &:first-child,
+            &:last-child {
+                margin: 0;
+            }
+
+            &.active {
+                background: var(--color-gradientPrimarycol);
+                color: var(--color-whitecol);
+            }
+
+            &:hover {
+                background: var(--color-gradientPrimarycol);
+                color: var(--color-whitecol);
+            }
+        }
+    }
+
+
+}
+
+.headingSection {
+    max-width: 60%;
+
+    @media #{$ipad} {
+        max-width: 60%;
+    }
+
+    @media #{$mob} {
+        max-width: 100%;
+    }
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0.0625em solid var(--color-primarycol);
+    border-radius: 1.875em;
+
+
+    .searchButton {
+        width: 3.25em;
+        height: 3.125em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        path {
+            fill: var(--color-primarycol);
+        }
+    }
+
+    .searchInput {
+        width: calc(100% - 3.25em);
+        max-width: 0;
+        border: 0;
+        background: transparent;
+        font-size: 1.375em;
+        overflow: hidden;
+
+       
+
+        &::placeholder {
+            color: var(--color-primarycol);
+        }
+
+        &.active {
+            max-width: calc(100% - 3.25em);
+            @media #{$ipad} {
+                width: 6.25em;
+            }
+        }
+    }
+
+}
+
+.searchArrow {
+    display: none;
+
+    &.active {
+        display: block;
+        margin-right: 0.9375em;
+    }
+}

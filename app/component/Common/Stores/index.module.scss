@@ -1,0 +1,155 @@
+@import "../../../styles/abstract/variable";
+
+.storeSection {
+    padding: 6.25em 0;
+    position: relative;
+    z-index: 1;
+    // transform: translateY(0);
+    // overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: #FFF1E1;
+        z-index: 0;
+        top: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        top: 0;
+        background: linear-gradient(236deg, rgba(255, 255, 255, 0.00), #FFF);
+
+    }
+
+
+    @media #{$ipadpro} {
+        background-position: right;
+        background-size: cover;
+    }
+
+    @media #{$ipad} {
+        background-position: right;
+        background-size: cover;
+    }
+
+}
+
+.headingWrapper {
+    max-width: 40%;
+
+    @media #{$ipad} {
+        max-width: 70%;
+    }
+
+    @media #{$mob} {
+        max-width: 100%;
+    }
+}
+
+.bgStores {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.storeBgWrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.tabWrapper {
+    position: relative;
+    z-index: 1;
+
+    @media #{$mob} {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.tabContainer {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-whitecol);
+    border-radius: 4.5625em;
+    padding: 0.25em;
+    border: 0.5px solid var(--color-primarycol);
+
+
+    .tab {
+        padding: 0.9375em 3.375em;
+
+        @media #{$mob} {
+            padding: 0.5em 2em;
+        }
+
+        p {
+            color: var(--color-primarycol);
+            line-height: 1.35;
+        }
+
+        &.active {
+            background: var(--color-gradientPrimarycol);
+            border-radius: 5.6875em;
+
+            p {
+                color: var(--color-whitecol);
+            }
+
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.slider {
+    margin-top: 2.5em;
+    &.cursorCustom{
+        cursor: url('/assets/svg/drag.svg') 50 50, auto;
+    }
+}
+
+.linkWrapper {
+    z-index: 1;
+}
+
+/* CustomSlider.css */
+.category-container {
+    position: relative;
+}
+
+.dragHandle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-65%, -50%);
+    width: 6.25em;
+    height: 6.25em;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: -webkit-grab;
+    cursor: grab;
+    z-index: 99;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emptyWrapper{
+    position: relative;
+    z-index: 1;
+    margin: 1.25em;
+}
+.cursorWrapper{
+    position: relative;
+}

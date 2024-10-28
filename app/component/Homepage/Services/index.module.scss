@@ -1,0 +1,261 @@
+@import "../../../styles/abstract/variable";
+
+.servicesSection {
+    padding: 6em 0 6.3125em;
+    background-image: linear-gradient(115deg, #C183B9 0%, #99458F 120.53%);
+    position: relative;
+
+    @media #{$ipadpro} {
+        padding: 5em 0 4em;
+    }
+
+    @media #{$mob} {
+        padding: 2em 0;
+    }
+
+    .bgVector {
+        position: absolute;
+        top: 12.5em;
+        bottom: 0;
+        margin: auto;
+        right: -14.375em;
+        transform: rotate(300deg);
+
+        @media #{$mob} {
+            top: -15.5em;
+            right: -1.875em;
+            transform: rotate(9deg);
+            width: 10em;
+            height: 11.25em;
+        }
+    }
+
+    .bgImage {
+        position: absolute;
+        top: 0;
+
+    }
+
+    .headingWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+
+        @media #{$ipad} {
+            width: 70%;
+        }
+
+        @media #{$mob} {
+            width: 100%;
+        }
+    }
+}
+
+.serviceSlider {
+    position: relative;
+
+    @media #{$mob} {
+        padding: 0 2em;
+    }
+
+    .slides {
+        width: 62.65em;
+        height: 33.125em;
+        border-radius: 1.875em;
+        overflow: hidden;
+        position: relative;
+
+        @media #{$ipadpro} {
+            width: 87%;
+            height: 87%;
+        }
+
+        @media #{$mob} {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .slideWrapper {
+
+        position: relative;
+        height: 33.125em;
+
+        @media #{$mob} {
+            height: 20em;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(16deg, #000 8.02%, rgba(0, 0, 0, 0.00) 55.62%);
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+    }
+
+    .textWrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 2.125em;
+        width: 100%;
+        padding: 0 2.25em;
+
+        @media #{$mob} {
+            padding: 0 1em 0 1em;
+            flex-wrap: wrap;
+            grid-gap: 0.625em;
+        }
+
+        h3 {
+            color: var(--color-whitecol);
+            font-weight: 500;
+            text-transform: capitalize;
+            width: 60%;
+
+            @media #{$desktop} {
+                width: calc(100% - 4.25em);
+            }
+
+            @media #{$mob} {
+                width: 100%;
+                font-size: 1.2em;
+                line-height: 1.2;
+            }
+        }
+
+        a {
+            font-size: 1em;
+        }
+    }
+}
+
+.btnWrapper {
+    @media #{$ipadpro} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .slider__btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        border: 0.0625em solid var(--color-whitecol);
+        width: 2.875em;
+        height: 2.875em;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+
+        @media #{$ipadpro} {
+            position: relative;
+            margin: 1.25em 0.4375em 2.5625em;
+            left: 0 !important;
+            right: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border-radius: 10rem;
+            z-index: -2;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 6.25em;
+            right: -6.875em;
+            width: 0%;
+            height: 100%;
+            background: var(--color-secondarycol);
+            transition: all .7s;
+            border-radius: 10rem;
+            z-index: -1;
+            transform: rotate(100deg);
+        }
+
+        &:hover {
+            @media #{$desktop} {
+
+            color: #fff;
+
+            &:before {
+                width: 25em;
+                top: -1.5625em;
+                right: -5.375em;
+                height: 28.125em;
+                transform: rotate(0deg);
+            }
+        }
+        }
+
+        &.prev {
+            left: 23.75em;
+        }
+
+        &.next {
+            right: 23.75em;
+            ;
+        }
+
+        &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+
+            &:hover {
+                @media #{$desktop} {
+                    color: var(--color-whitecol);
+
+                    &:before {
+                        width: 0;
+                        height: 100%;
+                        top: 6.25em;
+                        right: -6.875em;
+                        transform: rotate(100deg);
+                        background: transparent;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.linkWrapper {
+    position: absolute;
+    right: 4.6875em;
+    top: 12.125em;
+    width: auto;
+
+    @media #{$ipadpro} {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

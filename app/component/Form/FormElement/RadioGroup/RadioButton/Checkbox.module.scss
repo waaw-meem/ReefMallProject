@@ -1,0 +1,35 @@
+@import "../../../../../styles/abstract/variable";
+
+.radio {
+  p{
+    font-size: 1em;
+    padding: 0.625em 0.9375em;
+    border-radius: 0.375em;
+    background: var(--color-whitecol);
+    margin: 0 0.625em 0.625em 0;
+    color: var(--color-blackcol);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: $transition;
+  }
+  &:last-child{
+    p{
+      margin: 0;
+    }
+  }
+  
+  input {
+    display: none;
+    appearance: none;
+    border: 1px solid var(--color-whitecol);
+    width: 1em;
+    aspect-ratio: 1;
+    border-radius: var(--radii-full);
+  
+    &:checked + p {
+      background-color: var(--color-primarycol);
+      border-color: var(--color-primarycol);
+      color: var(--color-whitecol);
+    }
+  }
+}

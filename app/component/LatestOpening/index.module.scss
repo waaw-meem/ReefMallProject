@@ -1,0 +1,11 @@
+@import "../../styles/abstract/variable";
+
+.rowCustom {
+    gap: 2em 0;
+    z-index: 1;
+    position: relative;
+
+    @media #{$ipad} {
+        gap: 1.9em 0
+    }
+}

@@ -1,0 +1,100 @@
+@import "./../../../styles/abstract/variable";
+
+.mainSectionWrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.tabWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10.9375em;
+}
+
+.tabMenu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background: var(--color-whitecol);
+    padding: 0.25em;
+    border-radius: 4.503em;
+    height: 4.25em;
+    border: 0.03125em solid var(--color-primarycol);
+    margin: 0 auto;
+
+    @media #{$ipad}{
+        width: 41.25em;
+    }
+
+    @media #{$mob}{
+        height: auto;
+        border: none;
+        flex-wrap: wrap;
+        border-radius: 0.3125em;
+        grid-gap: 0.625em;
+    }
+
+}
+
+.tabBtn {
+    width: 13.525em;
+    height: 3.75em;
+    margin: 0;
+    color: var(--color-primarycol);
+    border-radius: 5.6875em;
+    text-transform: capitalize;
+    transition: $transition;
+
+    &.active {
+        background: linear-gradient(115deg, #C183B9, #99458F 120.53%);
+        color: var(--color-whitecol);
+    }
+
+    &:hover{
+        background: linear-gradient(115deg, #C183B9, #99458F 120.53%);
+        color: var(--color-whitecol);
+    }
+
+    @media #{$mob}{
+        flex-wrap: wrap;
+
+        &:not(.active){
+            border-bottom: 0.0625em solid #99458F;
+            border-radius: 0;
+        }
+    }
+}
+
+.imageWrapper {
+    max-height: 21.15em;
+    border-radius: 1.25em;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        transition: 0.5s all ease;
+        &:hover{
+            scale: 1.05;
+        }
+    }
+}
+
+.cardFlexWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1.25em;
+    margin-bottom: 2.9115em;
+}
+
+.cardprice {
+    color: var(--color-gray2col);
+    font-weight: 700;
+
+    @media #{$mob}{
+        font-size: 1.575em;
+    }
+}

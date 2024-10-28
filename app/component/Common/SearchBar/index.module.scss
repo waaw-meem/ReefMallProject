@@ -1,0 +1,107 @@
+@import '../../../styles/abstract/variable';
+
+.search__wrapper {
+    position: absolute;
+    top: 2em;
+    margin: auto;
+    right: 0;
+    z-index: 1;
+
+    @media #{$ipadpro} {
+        top: -0.5em;
+        right: 3em;
+
+    }
+
+    @media #{$mob} {
+        top: 2em;
+        right: -5em;
+
+    }
+
+
+
+    @media #{$ipadpro} {}
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        gap: 0.375em;
+        max-width: 13.815em;
+        width: 13.815em;
+        background: var(--color-whitecol);
+        display: none;
+        transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+        overflow: hidden;
+        padding: 0 1em;
+
+        @media #{$ipadpro} {
+            max-height: 3em;
+            max-width: 0;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+            overflow: hidden;
+            padding: 0.75em 0;
+        }
+
+        @media #{$mob} {
+            max-height: 0;
+            max-width: 13.815em;
+            transition: none;
+            overflow: hidden;
+            padding: 0 1em;
+        }
+
+        svg,
+        img {
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        input {
+            border: none;
+            font-size: 1em;
+            color: var(--color-blackcol);
+            font-weight: normal;
+
+            &::placeholder {
+                color: var(--color-blackcol);
+            }
+        }
+    }
+
+    &.show {
+        form {
+            transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+            padding: 0.75em 1em 0.625em 1em;
+            display: flex;
+
+            @media #{$ipadpro} {
+                max-width: 13.815em;
+                width: auto;
+            }
+
+            @media #{$mob} {
+                transition: none;
+                max-height: 2.3em;
+                height: auto;
+                padding: 0.75em 1em 0.625em 1em;
+            }
+        }
+    }
+}
+.searchArrow{
+    position: absolute;
+    right: 0.9375em;
+}

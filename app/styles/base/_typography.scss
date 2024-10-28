@@ -1,0 +1,220 @@
+h1,
+.h1 {
+  font-size: 4.375em; // 70px
+  font-weight: normal;
+  // line-height: 0.875em;
+
+  @media #{$ipadpro} {
+    font-size: 3.86em;
+  }
+
+  @media #{$ipad} {
+    font-size: 2.5em;
+  }
+
+  @media #{$mob} {
+    font-size: 2em;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3.75em; // 60px
+  font-weight: normal;
+  // line-height: 0.85em;
+
+  @media #{$ipadpro} {
+    font-size: 2.25em;
+  }
+
+  @media #{$ipad} {
+    font-size: 2.625em;
+  }
+
+  @media #{$mob} {
+    font-size: 2em;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 2.875em; //46px
+  font-weight: bold;
+  // line-height: 0.92em;
+
+  @media #{$ipadpro} {
+    font-size: 2em;
+  }
+
+  // @media #{$ipad} {
+  //   font-size: 2em;
+  // }
+}
+
+h4,
+.h4 {
+  font-size: 2.25em; // 36px
+  font-weight: normal;
+  // line-height: 0.9;
+
+  &.sm-font {
+    font-size: 2.1875em;
+  }
+
+  @media #{$ipadpro} {
+    font-size: var(--fontSize-18);
+  }
+
+  // @media #{$mob} {
+  //   font-size: 1.35em;
+  // }
+}
+
+h5,
+.h5 {
+  font-size: 1.875em; // 30px
+  font-weight: normal;
+  // line-height: 0.83em;
+
+  @media #{$ipadpro} {
+    font-size: 1.5em;
+  }
+
+  // @media #{$mob} {
+  //   font-size: 1em;
+  // }
+}
+
+h6,
+.h6 {
+  font-size: 1.125em; // 18px
+  font-weight: normal;
+
+  @media #{$mineTab} {
+    font-size: 1.58em;
+  }
+}
+
+p,
+.p {
+  font-size: 1.25em; // 18px
+  font-weight: normal;
+  margin: 0 0 1.25em 0;
+  // line-height: 1; as arsalan says
+  color: var(--color-blackcol);
+
+  @media #{$ipadpro} {
+    font-size: 1em;
+  }
+
+  @media #{$mob} {
+    font-size: 1.15em;
+  }
+  &.bold-font{
+    font-weight: 600;
+  }
+
+  &.lg-font {
+    font-size: 1.375em; // 22px
+
+    @media #{$ipadpro} {
+      font-size: 1em;
+    }
+
+    @media #{$mob} {
+      font-size: 1.45em;
+    }
+  }
+
+  &.md-font {
+    font-size: var(--fontSize-16); // 16px
+    line-height: 1;
+
+    @media #{$ipadpro} {
+      font-size: 1em;
+    }
+
+    @media #{$mob} {
+      font-size: 1em;
+    }
+  }
+
+  &.sm-font {
+    font-size: var(--fontSize-14); // 14px
+
+    @media #{$ipadpro} {
+      font-size: 1em;
+    }
+
+    @media #{$mob} {
+      font-size: 1em;
+    }
+  }
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-55 {
+  margin-top: 3.4375em;
+}
+
+.mt-35 {
+  margin-top: 1em; //35px
+
+  @media #{$tabL} {
+    margin-top: 2.1875em; //35px
+
+  }
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}

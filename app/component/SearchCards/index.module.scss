@@ -1,0 +1,59 @@
+@import "../../styles/abstract/variable";
+
+.tabBody {
+  display: none;
+  margin-top: 3em;
+
+  @media #{$mob} {
+    margin-top: 2em;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  .cardWrapper {
+    width: 100%;
+    &.brandCard{
+      .imgWrapper{
+        overflow: hidden;
+        height: 15em;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img{
+        width: 15em;
+        height: auto;
+      }
+    } 
+    &:hover {
+      img {
+        scale: 1.1;
+      }
+    }
+
+    img {
+      transition: $transition;
+      object-fit: cover;
+      height: 12em;
+      scale: 1;
+    }
+
+    .imgWrapper {
+      overflow: hidden;
+    }
+
+    .textWrapper {
+      background: var(--color-primarycol);
+      padding: 0.9375em;
+      color: var(--color-whitecol);
+      h1 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}

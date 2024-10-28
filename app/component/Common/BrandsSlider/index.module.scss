@@ -1,0 +1,137 @@
+@import "../../../styles/abstract/variable";
+
+.brandSlider {
+    position: relative;
+    margin-top: -5em;
+
+    @media #{$ipad} {
+        margin-top: 0;
+    }
+}
+
+.buttonWrapper {
+    position: absolute;
+    right: 4.6875em;
+    top: 1.875em;
+    z-index: 99;
+
+    @media #{$ipadpro} {
+        right: 0.9375em;
+    }
+
+    @media #{$ipad} {
+        padding: 1.25em 0;
+        display: flex;
+        position: static;
+        justify-content: center;
+    }
+
+    @media #{$ipad} {
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .buttonSection {
+        display: flex;
+        align-items: center;
+    }
+
+    .next {
+        margin-right: 1.25em;
+    }
+}
+
+.brandSlide {
+    width: 27.45em !important;
+    height: 51.625em !important;
+    overflow: hidden;
+
+    &:nth-child(even) {
+        .imgWrapper {
+            &::after {
+                background-color: rgba(var(--color-secondaryrgb), 0.35);
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        .imgWrapper {
+            &::after {
+                background-color: rgba(var(--color-primaryrgb), 0.35);
+            }
+        }
+    }
+
+    @media #{$ipadpro} {
+        height: 47em !important;
+    }
+
+    @media #{$mob} {
+        height: 36.5em !important;
+        width: 19.5em !important;
+    }
+
+}
+
+.imgWrapper {
+    position: relative;
+    height: 100%;
+
+    &::after {
+        transition: $transition;
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-blend-mode: overlay;
+    }
+    .bgImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media #{$ipadpro} {
+            object-position: center !important;
+        }
+
+    }
+
+    .brandLogo {
+        position: absolute;
+        top: 2.75em;
+        z-index: 1;
+        margin: auto;
+        left: 0;
+        right: 0;
+        max-width: 12em;
+        max-height: 12em;
+
+        @media #{$ipadpro} {
+            max-width: 14em;
+        }
+
+        @media #{$mob} {
+            max-width: 12em;
+        }
+    }
+    // .brandIntroImg{
+    //     position: absolute;
+    //     bottom: 0;
+    //     z-index: 1;
+    //     left: 0;
+    //     right: 0;
+    //     margin: auto;
+    //     height: 30em;
+    //     width: 25.9375em;
+    //     object-fit: cover;
+    //     object-position: top;
+
+    //     @media #{$ipadpro} {
+    //         max-width: 14em;
+    //     }
+
+    //     @media #{$mob} {
+    //         max-width: 12em;
+    //     }
+    // }
+}

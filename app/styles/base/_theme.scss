@@ -1,0 +1,139 @@
+body {
+  font-weight: 400;
+  color: var(--color-blackcol);
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0;
+
+  @media #{$ipad} {
+    padding: 0 5em;
+  }
+
+  @media #{$ipad} {
+    padding: 0 3em;
+  }
+
+  @media #{$mob} {
+    padding: 0 2em;
+  }
+}
+
+.container-s {
+  width: 100%;
+  padding: 0 3.91%;
+
+  @media #{$ipad} {
+    padding: 0 3em;
+  }
+
+  @media #{$mob} {
+    padding: 0 2em;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 4%; // 77px
+
+  @media #{$ipadpro} {
+    padding: 0 5em;
+  }
+
+  @media #{$ipad} {
+    padding: 0 3em;
+  }
+
+  @media #{$mob} {
+    padding: 0 2em;
+  }
+}
+
+.container-custom {
+  padding-left: 0;
+
+  @media #{$ipad} {
+    padding-left: 3em;
+  }
+
+  @media #{$mob} {
+    padding-left: 2em;
+  }
+}
+
+.container-custom-right {
+  padding-right: 0;
+
+  @media #{$ipadpro} {
+    padding-right: 5em;
+  }
+
+  @media #{$ipad} {
+    padding-right: 3em;
+  }
+
+  @media #{$mob} {
+    padding-right: 2em;
+  }
+}
+
+.dashboard-container {
+  width: 100%;
+  padding: 0 1.875em;
+
+
+  @media #{$ipad} {
+    padding: 0 1.875em;
+  }
+
+  @media #{$mob} {
+    padding: 0 1.875em;
+  }
+}
+
+.dashboard-card {
+  background: var(--color-whitecol);
+  border-radius: 0.625em;
+  padding: 2.5em;
+
+  @media #{$mob} {
+    padding: 1.5em;
+  }
+}
+
+
+.section {
+  position: relative;
+  padding: 2em 0;
+
+  @media #{$tab} {
+    padding: 5em 0;
+  }
+
+  @media #{$desktop} {
+    padding: 6.25em 0 !important;
+  }
+}
+
+.generic-radius {
+  border-radius: 1.25em;
+
+  @media #{$ipadpro} {
+    border-radius: 1em;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.cursor-none {
+  a {
+    cursor: none;
+  }
+}

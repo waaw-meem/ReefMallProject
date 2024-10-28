@@ -1,0 +1,57 @@
+@import "../../../../styles/abstract/variable";
+
+.sidebar {
+    background: var(--color-gradientPrimarycol);
+    height: 100vh;
+    position: relative;
+    .logoWrapper {
+        padding: 1.875em 1.875em;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+                
+        svg{
+            width: 9.375em;
+        }
+    }
+
+    .navWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .navLink {
+            padding: 1.125em 1.35em;
+            font-size: 1.375em;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 700;
+
+            &.active {
+                background: var(--color-whitecol);
+            }
+
+            .sidebarImage {
+                margin-right: 0.625em;
+            }
+
+            .link {
+                margin: 0;
+                color: rgba(var(--color-whitecolrgb), 0.5);
+                line-height: 1;
+
+                &.activeLink {
+                    color: var(--color-blackcol);
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    .copywrite{
+        padding: 1.875em 1.875em;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: var(--color-whitecol);
+    }
+}
